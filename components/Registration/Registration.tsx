@@ -30,11 +30,11 @@ const Registration = () => {
                         <source src="Assets/Videos/Registration_video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <div className="absolute inset-0 flex items-center justify-end">
+                    <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-white max-w-[400px] p-12 text-right">
-                            <div className="text-3xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="text-8xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
                             <div className="mt-4 px-4 py-2 bg-black rounded-[20.01px] shadow-lg inline-block">
-                                <div className="text-xl font-semibold font-['Plus Jakarta Sans'] text-white">Register Now</div>
+                                <div className="text-3xl font-semibold font-['Plus Jakarta Sans'] text-white">Register Now</div>
                             </div>
                         </div>
                     </div>
