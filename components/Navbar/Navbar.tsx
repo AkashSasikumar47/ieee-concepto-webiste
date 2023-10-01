@@ -1,28 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <nav className="bg-white mb-6 md:mb-16">
-            <div className="w-full w-[1920px] px-4 px-[84px] py-3 flex flex-col md:flex-row justify-between items-center">
-                {/* Logo */}
-                <img className="w-[245.19px] h-[100px] mb-4 md:mb-0" src="/Assets/Logo/IEEE_Logo.png" alt="Logo" />
-
-                {/* Navigation Links */}
-                <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-                    <div className="text-black text-lg font-semibold font-['Plus Jakarta Sans']">Home</div>
-                    <div className="text-black text-lg font-semibold font-['Plus Jakarta Sans']">About</div>
-                    <div className="text-black text-lg font-semibold font-['Plus Jakarta Sans']">Contact</div>
-                </div>
-
-                {/* Register Button */}
-                <div className="mt-4 md:mt-0">
-                    <div className="w-[157px] h-[50px] bg-black rounded-[20px] shadow-md text-white text-lg font-semibold font-['Plus Jakarta Sans'] flex items-center justify-center">
-                        Register
+            <div className="container mx-auto px-4 max-w-screen-xl">
+                <div className="flex justify-between items-center py-4">
+                    <div className="flex items-center">
+                        <img src="/Assets/Logo/IEEE_Logo.png" alt="Logo" className="w-100 h-12" />
+                    </div>
+                    <div className="md:hidden">
+                        <button
+                            onClick={toggleMobileMenu}
+                            className="block text-gray-800 hover:text-black focus:text-black focus:outline-none"
+                        >
+                            <svg
+                                className="w-6 h-6 bg-white fill-current"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                {isMobileMenuOpen ? (
+                                    <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M3 5H21V7H3V5ZM3 11H21V13H3V11ZM3 17H21V19H3V17Z"
+                                    />
+                                ) : (
+                                    <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M3 5H21V7H3V5ZM3 11H21V13H3V11ZM3 17H21V19H3V17Z"
+                                    />
+                                )}
+                            </svg>
+                        </button>
+                    </div>
+                    <div className="hidden md:flex space-x-6 text-black">
+                        <a href="/about" className="text-black">About</a>
+                        <a href="/contact" className="text-black">Contact</a>
+                        <a href="/register" className="text-black">Register</a>
                     </div>
                 </div>
+                {/* Mobile menu */}
+                {isMobileMenuOpen && (
+                    <div className="md:hidden">
+                        <div className="text-black">
+                            <a href="/about" className="block text-black py-2">About</a>
+                            <a href="/contact" className="block text-black py-2">Contact</a>
+                            <a href="/register" className="block text-black py-2">Register</a>
+                        </div>
+                    </div>
+                )}
             </div>
         </nav>
     );
-}
+};
 
 export default Navbar;

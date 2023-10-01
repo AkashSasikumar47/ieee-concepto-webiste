@@ -2,26 +2,23 @@ import React from 'react';
 
 const FAQ = () => {
     return (
-        <section className="bg-white text-black mb-16">
-            <div className="w-full px-4 md:px-[84px] py-3 flex flex-col md:flex-row justify-start items-center gap-16">
-                <div className="w-full md:w-[573px] p-4 flex flex-col justify-start items-start gap-8">
-                    <div className="text-4xl font-extrabold font-['Plus Jakarta Sans'] text-center">Frequently Asked Questions</div>
-                    <div className="text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">
-                        Explore some common questions about CONCEPTO23 below. If you have any other inquiries, feel free to contact us.
-                    </div>
+        <section className="bg-white py-16 mb-16">
+            <div className="container mx-auto px-4 max-w-screen-xl">
+                <div className="text-center">
+                    <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">Frequently Asked Questions</h2>
                 </div>
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="w-full max-w-[360px] p-4 flex flex-col justify-start items-start gap-4">
-                        <div className="text-2xl font-extrabold font-['Plus Jakarta Sans']">How can I register for CONCEPTO23?</div>
-                        <div className="text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="bg-gray-900 text-white p-6 rounded-lg shadow-lg">
+                        <h3 className="text-xl md:text-2xl font-semibold mb-4">How can I register for CONCEPTO23?</h3>
+                        <p className="text-base md:text-lg">
                             Registering for CONCEPTO23 is easy! Simply click on the "Register Now" button on our website, fill out the registration form, and you're all set to join us for the event.
-                        </div>
+                        </p>
                     </div>
-                    <div className="w-full max-w-[360px] p-4 flex flex-col justify-start items-start gap-4">
-                        <div className="text-2xl font-extrabold font-['Plus Jakarta Sans']">Is there a registration fee for CONCEPTO23?</div>
-                        <div className="text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">
+                    <div className="bg-gray-900 text-white p-6 rounded-lg shadow-lg">
+                        <h3 className="text-xl md:text-2xl font-semibold mb-4">Is there a registration fee for CONCEPTO23?</h3>
+                        <p className="text-base md:text-lg">
                             No, registration for CONCEPTO23 is completely free. We believe in making this valuable event accessible to all interested participants.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>

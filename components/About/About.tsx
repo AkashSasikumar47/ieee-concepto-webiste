@@ -3,24 +3,44 @@ import React from 'react';
 const About = () => {
     return (
         <section className="bg-white text-black mb-16">
-            <div className="w-full px-4 md:px-[32px] py-3 flex flex-col md:flex-row justify-start items-center gap-16">
-                <div className="w-full md:w-[676px] text-4xl md:text-6xl font-extrabold font-['Plus Jakarta Sans'] text-center">Discover IEEE SRMIST Student Branch</div>
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="w-full p-3">
-                        <div className="text-2xl md:text-4xl font-extrabold font-['Plus Jakarta Sans']">Introduction to IEEE SB SRM</div>
-                        <div className="text-base md:text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">IEEE SB SRM is the student chapter of the global IEEE organization at SRM Institute of Science and Technology. We're dedicated to promoting innovation and academic excellence among our members.</div>
+            <div className="container mx-auto px-4 py-8 max-w-screen-xl">
+                <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">Discover IEEE SRMIST Student Branch</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="w-full">
+                        <div className="flex items-center mb-4">
+                            <img src="/Assets/Miscellaneous/globe.svg" alt="Globe Icon" className="w-10 h-10 mr-4" />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Our Founding</h3>
+                        </div>
+                        <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
+                            IEEE SB SRM was established in [year] with a vision to inspire, educate, and empower the next generation of engineers and innovators.
+                        </p>
                     </div>
-                    <div className="w-full p-3">
-                        <div className="text-2xl md:text-4xl font-extrabold font-['Plus Jakarta Sans']">Mission and Value</div>
-                        <div className="text-base md:text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">Our mission is to inspire, educate, and empower the next generation of engineers and innovators. We value innovation, education, community, and excellence.</div>
+                    <div className="w-full">
+                        <div className="flex items-center mb-4">
+                            <img src="/Assets/Miscellaneous/loyalty.svg" alt="Loyalty Icon" className="w-10 h-10 mr-4" />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Our Values</h3>
+                        </div>
+                        <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
+                            We are driven by innovation, education, community, and excellence. These values guide our actions and initiatives.
+                        </p>
                     </div>
-                    <div className="w-full p-3">
-                        <div className="text-2xl md:text-4xl font-extrabold font-['Plus Jakarta Sans']">History</div>
-                        <div className="text-base md:text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">Established in [year], IEEE SB SRM has a history of fostering talent and technological advancement. We've organized impactful events and initiatives for our engineering community.</div>
+                    <div className="w-full">
+                        <div className="flex items-center mb-4">
+                            <img src="/Assets/Miscellaneous/history.svg" alt="History Icon" className="w-10 h-10 mr-4" />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Our Journey</h3>
+                        </div>
+                        <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
+                            Over the years, we've organized impactful events, workshops, and initiatives, fostering talent and technological advancement.
+                        </p>
                     </div>
-                    <div className="w-full p-3">
-                        <div className="text-2xl md:text-4xl font-extrabold font-['Plus Jakarta Sans']">Benefits of IEEE Membership</div>
-                        <div className="text-base md:text-lg font-medium font-['Plus Jakarta Sans'] leading-[33px]">Join IEEE to access a world of resources, networking, and professional development opportunities. Stay ahead in the field of technology with our global network.</div>
+                    <div className="w-full">
+                        <div className="flex items-center mb-4">
+                            <img src="/Assets/Miscellaneous/target.svg" alt="Target Icon" className="w-10 h-10 mr-4" />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Membership Benefits</h3>
+                        </div>
+                        <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
+                            Joining IEEE opens doors to a world of resources, networking, and professional development opportunities.
+                        </p>
                     </div>
                 </div>
             </div>
