@@ -4,22 +4,15 @@ const Registration = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        // Check window.innerWidth when the component mounts (client-side)
-        setIsMobile(window.innerWidth <= 640);
-
-        // Add event listener to update isMobile on window resize
+        setIsMobile(window.innerWidth <= 768);
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 640);
+            setIsMobile(window.innerWidth <= 768);
         };
-
-        // Attach the event listener
         window.addEventListener('resize', handleResize);
-
-        // Clean up the event listener when the component unmounts
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []); // Empty dependency array ensures this effect runs only once
+    }, []);
 
     return (
         <div className="relative bg-white mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8 mb-16">
