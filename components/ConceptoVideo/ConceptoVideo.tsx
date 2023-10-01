@@ -19,7 +19,7 @@ const ConceptoVideo = () => {
             {/* Desktop Section */}
             {!isMobile && (
                 <div className="hidden md:block relative rounded-xl overflow-hidden">
-                    <video className="object-cover object-center w-full h-[512px] rounded-3xl" autoPlay loop muted controls={false}>
+                    <video className="object-cover object-center w-full h-[400px] rounded-3xl" autoPlay loop muted controls={false}>
                         <source src="Assets/Videos/Concepto_Video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
