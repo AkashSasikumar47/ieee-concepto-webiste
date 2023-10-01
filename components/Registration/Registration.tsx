@@ -1,19 +1,68 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Registration = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // Check window.innerWidth when the component mounts (client-side)
+        setIsMobile(window.innerWidth <= 640);
+        
+        // Add event listener to update isMobile on window resize
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 640);
+        };
+
+        // Attach the event listener
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []); // Empty dependency array ensures this effect runs only once
+
     return (
-        <section className="bg-white text-black mb-16 relative">
-            <img className="w-full h-auto rounded-[40.02px]" src="https://via.placeholder.com/1681x533" alt="Registration Banner" />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-                <div className="text-4xl font-extrabold font-['Plus Jakarta Sans'] mb-4">Register Now</div>
-                <div className="text-lg font-semibold font-['Plus Jakarta Sans'] mb-8">
-                    Ready to join us for CONCEPTO23? Click the "Register Now" button below, and you'll be directed to our registration form on Typeform. Fill out your details, and you're all set!<br /><br />While there are no fees, we encourage you to register as early as possible to secure your spot at this exciting event.
+        <div className="relative bg-white mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8 mb-16">
+            {/* Desktop Section */}
+            {!isMobile && (
+                <div className="hidden md:block relative rounded-xl overflow-hidden">
+                    <video className="object-cover object-center w-full h-auto rounded-3xl" autoPlay loop muted controls={false}>
+                        <source src="Assets/Videos/Registration_video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="absolute inset-0 flex items-center justify-end">
+                        <div className="text-white max-w-[400px] p-12 text-right">
+                            <div className="text-3xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="mt-4 px-4 py-2 bg-black rounded-[20.01px] shadow-lg inline-block">
+                                <div className="text-xl font-semibold font-['Plus Jakarta Sans'] text-white">Register Now</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="p-4 bg-slate-400 rounded-[20.01px] shadow inline-block">
-                    <div className="text-white text-2xl font-semibold font-['Plus Jakarta Sans']">Register Now</div>
+            )}
+
+            {/* Mobile Section */}
+            {isMobile && (
+                <div className="md:hidden relative">
+                    <div className="relative w-full aspect-w-9 aspect-h-16 overflow-hidden rounded-xl">
+                        <div className="video-container">
+                            <video className="object-cover object-center w-full h-full rounded-xl" autoPlay loop muted controls={false}>
+                                <source src="Assets/Videos/Registration_video.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-end text-white p-4">
+                        <div>
+                            <div className="text-lg font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="mt-2 px-2 py-1 bg-black rounded-[10px] shadow-lg inline-block">
+                                <div className="text-sm font-base font-['Plus Jakarta Sans'] text-white">Register Now</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            )}
+        </div>
     );
 }
 
