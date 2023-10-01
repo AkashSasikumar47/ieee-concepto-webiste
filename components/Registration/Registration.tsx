@@ -6,7 +6,7 @@ const Registration = () => {
     useEffect(() => {
         // Check window.innerWidth when the component mounts (client-side)
         setIsMobile(window.innerWidth <= 640);
-        
+
         // Add event listener to update isMobile on window resize
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 640);
@@ -26,20 +26,22 @@ const Registration = () => {
             {/* Desktop Section */}
             {!isMobile && (
                 <div className="hidden md:block relative rounded-xl overflow-hidden">
-                    <video className="object-cover object-center w-full h-auto rounded-3xl" autoPlay loop muted controls={false}>
+                    <video className="object-cover object-center w-full h-[512px] rounded-3xl" autoPlay loop muted controls={false}>
                         <source src="Assets/Videos/Registration_video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-white max-w-[400px] p-12 text-right">
-                            <div className="text-8xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
-                            <div className="mt-4 px-4 py-2 bg-black rounded-[20.01px] shadow-lg inline-block">
-                                <div className="text-3xl font-semibold font-['Plus Jakarta Sans'] text-white">Register Now</div>
-                            </div>
+                    <div className="absolute inset-0 flex flex-col items-center justify-start">
+                        <div className="text-white p-8 text-center">
+                            <div className="text-6xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="mt-4"></div>
+                            <button className="px-8 py-2 bg-black rounded-[20.01px] shadow-lg inline-block text-l font-semibold font-['Plus Jakarta Sans'] text-white">
+                                REGISTER
+                            </button>
                         </div>
                     </div>
                 </div>
             )}
+
 
             {/* Mobile Section */}
             {isMobile && (
@@ -52,16 +54,17 @@ const Registration = () => {
                             </video>
                         </div>
                     </div>
-                    <div className="absolute inset-0 flex items-center justify-end text-white p-4">
-                        <div>
-                            <div className="text-lg font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
-                            <div className="mt-2 px-2 py-1 bg-black rounded-[10px] shadow-lg inline-block">
-                                <div className="text-sm font-base font-['Plus Jakarta Sans'] text-white">Register Now</div>
+                    <div className="absolute inset-0 flex flex-col items-center justify-start">
+                        <div className="text-white p-8 text-center">
+                            <div className="text-l font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="mt-2 px-2 py-1 bg-black rounded-[8px] shadow-lg inline-block">
+                                <div className="text-xs font-base font-['Plus Jakarta Sans'] text-white">REGISTER</div>
                             </div>
                         </div>
                     </div>
                 </div>
             )}
+
         </div>
     );
 }
