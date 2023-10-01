@@ -1,60 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const AboutConcepto = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        setIsMobile(window.innerWidth <= 768);
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
     return (
-        <div className="relative bg-white mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8 mb-16">
-            {/* Desktop Section */}
-            {!isMobile && (
-                <div className="hidden md:block relative rounded-xl overflow-hidden">
-                    <video className="object-cover object-center w-full h-[512px] rounded-3xl" autoPlay loop muted controls={false}>
-                        <source src="Assets/Videos/Concepto_Video.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div className="absolute inset-0 flex flex-col items-left justify-center">
-                        <div className="text-white p-8 text-left max-w-[500px]">
-                            <div className="text-3xl font-bold font-['Plus Jakarta Sans']">
-                                Welcome to CONCEPTO23, an annual event by IEEE SB SRM. We're your gateway to innovation and ideation.
-                            </div>
+        <section className="bg-white py-16 mb-16 max-w-screen-xl mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center justify-center">
+                {/* Text Information */}
+                <div className="max-w-screen-md md:w-1/2 mx-auto md:mr-4">
+                    <div className="text-left md:text-left">
+                        <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">About CONCEPTO23</h2>
+                        <div className="bg-white text-black">
+                            <p className="text-base md:text-lg">
+                                CONCEPTO23 is an annual event organized by IEEE SB SRM. It's your gateway to innovation, ideation, and a world of opportunities. Our mission is to nurture innovation, inspire minds, and provide a platform for learning and growth.
+                            </p>
+                            <p className="text-base md:text-lg mt-4">
+                                Through a series of engaging sessions, inspiring speakers, and interactive workshops, CONCEPTO23 brings together students, professionals, and industry leaders to explore the latest trends, share insights, and spark creativity. Join us on this journey of innovation and discovery!
+                            </p>
                         </div>
                     </div>
                 </div>
-            )}
 
-            {/* Mobile Section */}
-            {isMobile && (
-                <div className="md:hidden relative">
-                    <div className="relative w-full aspect-w-9 aspect-h-16 overflow-hidden rounded-xl">
-                        <div className="video-container">
-                            <video className="object-cover object-center w-full h-full rounded-xl" autoPlay loop muted controls={false}>
-                                <source src="Assets/Videos/Concepto_Video.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                    <div className="absolute inset-0 flex flex-col items-left justify-center">
-                        <div className="text-white p-4 text-left max-w-[200px]">
-                            <div className="text-xs font-medium font-['Plus Jakarta Sans']">
-                                Welcome to CONCEPTO23, an annual event by IEEE SB SRM. We're your gateway to innovation and ideation.
-                            </div>
-                        </div>
-                    </div>
+                {/* Image */}
+                <div className="max-w-screen-md md:w-1/2 mt-8 md:mt-0">
+                    <img src="Assets/lost-in-space-3d-cute-girl-in-astronaut-costume-transparent-background-free-png 1.png" alt="Concepto23 Image" className="w-full h-auto" />
                 </div>
-            )}
-        </div>
+            </div>
+        </section>
     );
-}
+};
 
 export default AboutConcepto;
