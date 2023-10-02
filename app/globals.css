@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-color: #00FF00;
+  --background-color: #ffffff;
   /* Change background color to green */
   --text-color: #000000;
   /* Black */
@@ -21,9 +21,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-color: #000000;
+    --background-color: #ffffff;
     /* Change background color to black in dark mode */
-    --text-color: #FFFFFF;
+    --text-color: #000000;
     /* White in dark mode */
   }
 }
