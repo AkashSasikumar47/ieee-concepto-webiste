@@ -21,7 +21,7 @@ const AboutConcepto = () => {
 
                 {/* Image */}
                 <div className="max-w-screen-md md:w-1/2 mt-8 md:mt-0">
-                    <img src="Assets/lost-in-space-3d-cute-girl-in-astronaut-costume-transparent-background-free-png 1.png" alt="Concepto23 Image" className="w-full h-auto" />
+                    <img src="Assets/Planet.svg" alt="Concepto23 Image" className="w-full h-auto" />
                 </div>
             </div>
         </section>
