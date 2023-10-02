@@ -8,7 +8,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white mb-6 md:mb-16">
+        <nav className="bg-white mb-6 md:mb-4">
             <div className="container mx-auto px-4 max-w-screen-xl">
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center">
