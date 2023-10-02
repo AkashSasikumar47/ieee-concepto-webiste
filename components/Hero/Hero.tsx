@@ -50,8 +50,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Information on the left with a maximum width of 600px */}
-                <div className="p-6 max-w-[500px]">
+                {/* Information on the left */}
+                <div className="p-6 max-w-[720px]">
                     <h1 className="text-2xl md:text-4xl font-bold font-['Plus Jakarta Sans'] text-black mb-4">
                         Welcome to <strong>CONCEPTO23</strong>
                         <br />Unleash Innovation!
