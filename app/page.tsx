@@ -1,10 +1,12 @@
 "use client";
 
+import React from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import Sponsors from '../components/Sponsors/Sponsors';
 import About from '../components/About/About';
+import ConceptoVideo from '../components/ConceptoVideo/ConceptoVideo';
 import AboutConcepto from '../components/AboutConcepto/AboutConcepto';
 import Speakers from '../components/Speakers/Speakers';
 import Registration from '../components/Registration/Registration';
@@ -23,20 +25,17 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Navbar */}
       <Navbar />
-
-
-
-
+      <Hero />
+      <Sponsors />
       <About />
+      <ConceptoVideo />
+      <AboutConcepto />
       <Speakers />
       <Registration />
       <FAQ />
       <Testimonials />
       <Footer />
-
-
 
     </div>
   );
