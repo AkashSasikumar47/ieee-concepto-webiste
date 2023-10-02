@@ -40,19 +40,31 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className="hidden md:flex space-x-6 text-black">
-                        <a href="/about" className="text-black">About</a>
-                        <a href="/contact" className="text-black">Contact</a>
-                        <a href="/register" className="text-black">Register</a>
+                    <div className="hidden md:flex space-x-6 text-black items-center">
+                        <a href="/About" className="text-black font-semibold">About</a>
+                        <a href="/Mentors" className="text-black font-semibold">Mentors</a>
+                        <a href="/Contact" className="text-black font-semibold">Contact</a>
+                        
+                        {/* Conditionally render the button for large screens */}
+                        {!isMobileMenuOpen && (
+                            <div className="w-[137px] h-[47px] px-[32px] py-[16px] bg-[#A9C2CB] rounded-[14px] shadow-md inline-flex items-center justify-center">
+                                <div className="text-white text-lg font-semibold font-['Plus Jakarta Sans']">REGISTER</div>
+                            </div>
+                        )}
                     </div>
                 </div>
                 {/* Mobile menu */}
                 {isMobileMenuOpen && (
                     <div className="md:hidden">
                         <div className="text-black">
-                            <a href="/about" className="block text-black py-2">About</a>
-                            <a href="/contact" className="block text-black py-2">Contact</a>
-                            <a href="/register" className="block text-black py-2">Register</a>
+                            <a href="/About" className="block text-black py-2">About</a>
+                            <a href="/Mentors" className="block text-black py-2">Mentors</a>
+                            <a href="/Contact" className="block text-black py-2 mb-4">Contact</a>
+                            
+                            {/* Render the button inside the mobile menu */}
+                            <div className="w-[96px] h-[32px] px-[12px] py-[12px] bg-[#A9C2CB] rounded-[14px] shadow-md inline-flex items-center justify-center">
+                                <div className="text-white text-xs font-semibold font-['Plus Jakarta Sans']">REGISTER</div>
+                            </div>
                         </div>
                     </div>
                 )}
