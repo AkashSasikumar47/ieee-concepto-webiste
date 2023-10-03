@@ -2,15 +2,30 @@ import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+
+    function calculateTimeRemaining() {
+        const eventDate = new Date('2023-10-18T08:00:00'); // October 18, 2023, 8:00 AM
+        const currentDate = new Date();
+        const timeDifference = eventDate - currentDate;
+
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        return { days, hours, minutes, seconds };
+    }
 
     useEffect(() => {
         setIsMobile(window.innerWidth <= 768);
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-        window.addEventListener('resize', handleResize);
+
+        const interval = setInterval(() => {
+            setTimeRemaining(calculateTimeRemaining());
+        }, 1000);
+
         return () => {
-            window.removeEventListener('resize', handleResize);
+            clearInterval(interval);
         };
     }, []);
 
@@ -40,24 +55,24 @@ const Hero = () => {
 
                     {/* Smaller Black Card with Countdown */}
                     <div className="bg-black rounded-2xl p-6 text-white absolute right-[10%] md:right-[140px] bottom-[36px] md:bottom-[10%]">
-                        <h2 className="text-sm font-semibold mb-2">Event Countdown</h2>
-                        <div id="countdown" className="text-xs font-bold">
-                            <span id="days">00</span> days
-                            <span id="hours">00</span> hours
-                            <span id="minutes">00</span> minutes
-                            <span id="seconds">00</span> seconds
+                        <h2 className="text-lg font-semibold mb-2">Event Countdown</h2>
+                        <div id="countdown" className="text-sm text-[#A9C2CB] font-semibold">
+                            <span id="days">{timeRemaining.days.toString().padStart(2, '0')}</span>&nbsp;Days&nbsp;
+                            <span id="hours">{timeRemaining.hours.toString().padStart(2, '0')}</span>&nbsp;Hours&nbsp;
+                            <span id="minutes">{timeRemaining.minutes.toString().padStart(2, '0')}</span>&nbsp;Minutes&nbsp;
+                            <span id="seconds">{timeRemaining.seconds.toString().padStart(2, '0')}</span>&nbsp;Seconds
                         </div>
                     </div>
                 </div>
 
                 {/* Information on the left */}
                 <div className="p-6 max-w-[720px]">
-                    <h1 className="text-2xl md:text-4xl font-bold font-['Plus Jakarta Sans'] text-black mb-4">
-                        Welcome to <strong>CONCEPTO23</strong>
-                        <br />Unleash Innovation!
+                    <h1 className="text-xl md:text-4xl font-bold font-['Plus Jakarta Sans'] text-black mb-4">
+                        Welcome to <strong>CONCEPTO-23</strong>
+                        <br />Your Gateway to Innovation
                     </h1>
-                    <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-                        Discover a world of opportunities, learn from industry experts, and unlock your inner techie.
+                    <p className="text-gray-600 text-l md:text-xl leading-relaxed">
+                        Join the Innovation Revolution – Register Today and Ignite Your Creative Potential!
                     </p>
                     <a href="#" className="text-blue-500 underline mt-4 inline-block">Learn More</a>
                 </div>
@@ -75,7 +90,7 @@ const Hero = () => {
                     </div>
                     <div className="absolute inset-0 flex flex-col items-left justify-center">
                         <div className="text-white p-8 text-left">
-                            <div className="text-3xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="text-3xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO-23</div>
                         </div>
                     </div>
                 </div>
