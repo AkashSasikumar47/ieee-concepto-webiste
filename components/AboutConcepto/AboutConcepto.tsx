@@ -7,13 +7,14 @@ const AboutConcepto = () => {
                 {/* Text Information */}
                 <div className="max-w-screen-md md:w-1/2 mx-auto md:mr-4">
                     <div className="text-left md:text-left">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">About CONCEPTO23</h2>
+                        <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">About CONCEPTO-23</h2>
                         <div className="bg-white text-black">
                             <p className="text-base md:text-lg">
-                                CONCEPTO23 is an annual event organized by IEEE SB SRM. It's your gateway to innovation, ideation, and a world of opportunities. Our mission is to nurture innovation, inspire minds, and provide a platform for learning and growth.
-                            </p>
+                                Welcome to CONCEPTO-23, your passport to the world of innovation and inspiration. We're all about fostering creativity, connecting you with industry trailblazers, and providing a platform for your personal and professional growth. With a vibrant community of thinkers, doers, and dreamers, CONCEPTO-23 is the place to unlock your potential. Join us and seize the opportunity to innovate, learn, and shape a brighter future.                            </p>
                             <p className="text-base md:text-lg mt-4">
-                                Through a series of engaging sessions, inspiring speakers, and interactive workshops, CONCEPTO23 brings together students, professionals, and industry leaders to explore the latest trends, share insights, and spark creativity. Join us on this journey of innovation and discovery!
+                                At CONCEPTO-23, we're not just an event; we're a catalyst for your journey towards greatness. It's time to take that bold step, explore uncharted territories, and ignite your passion for innovation. Register today and be part of an extraordinary experience that will leave you inspired, empowered, and ready to take on the world. Don't miss this chance – your innovation adventure starts here!                            </p>
+                            <p className="text-base md:text-lg mt-4">
+                                <a href="/about" className="text-blue-500 underline">Learn more about the event</a>
                             </p>
                         </div>
                     </div>
