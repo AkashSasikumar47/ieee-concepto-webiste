@@ -3,35 +3,29 @@
 .sponsors-container {
     display: flex;
     align-items: center;
-    /* Center-align logos vertically */
     max-height: 128px;
-    /* Limit maximum height */
     overflow: hidden;
-    /* Hide overflowing logos */
     animation: loopSponsors 20s linear infinite;
-    /* Continuous animation */
 }
 
 .sponsor {
-    margin-right: 64px;
-    /* Adjust the spacing between sponsor logos */
+    margin-right: 128px;
     flex: 1;
-    /* Distribute available space equally among logos */
 }
 
 .sponsor-logo {
     max-width: 100%;
     height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
 }
 
 @keyframes loopSponsors {
     0% {
         transform: translateX(100%);
-        /* Start from the right side */
     }
 
     100% {
         transform: translateX(-100%);
-        /* Move to the left side */
     }
 }
