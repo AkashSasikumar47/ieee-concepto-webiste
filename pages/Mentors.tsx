@@ -15,13 +15,12 @@ const Mentors = () => {
     return (
         <div>
             <Head>
-                <title>Mentors - CONCEPTO-23</title>
-                <meta name="description" content="Meet our expert mentors at CONCEPTO-23 and gain valuable insights into innovation and technology." />
-                {/* Add other meta tags, links to CSS or fonts if needed */}
+                <title>Mentors - CONCEPTO-23 | IEEE SRMIST Student Branch</title>
+                <meta name="description" content="Meet our expert mentors at CONCEPTO-23 organized by IEEE SB SRMIST. Gain valuable insights into innovation and technology." />
+                <meta name="keywords" content="Mentors at CONCEPTO-23, IEEE SRMIST, innovation, technology" />
             </Head>
+            
             <Navbar />
-
-
             <MentorsInfo />
             <Registration />
             <FAQ />

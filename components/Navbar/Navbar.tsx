@@ -45,6 +45,7 @@ const Navbar = () => {
                     <div className="hidden md:flex space-x-6 text-black items-center">
                         <a href="/About" className="text-black font-semibold">About</a>
                         <a href="/Mentors" className="text-black font-semibold">Mentors</a>
+                        <a href="/Contact" className="text-black font-semibold">Contact</a>
 
                         {/* Conditionally render the button for large screens */}
                         {!isMobileMenuOpen && (
@@ -65,6 +66,7 @@ const Navbar = () => {
                         <div className="text-black">
                             <a href="/About" className="block text-black py-2">About</a>
                             <a href="/Mentors" className="block text-black py-2">Mentors</a>
+                            <a href="/Contact" className="block text-black py-2 mb-8">Contact</a>
                             {/* Render the button inside the mobile menu */}
                             <a
                                 href="https://uf0467nch79.typeform.com/to/PPe8o3gV"

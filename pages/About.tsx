@@ -13,8 +13,10 @@ const About = () => {
     return (
         <div>
             <Head>
-                <title>About CONCEPTO-23</title>
-                {/* Add any meta tags or other head content here */}
+                <title>About CONCEPTO-23 | IEEE SRMIST Student Branch</title>
+                <meta name="description" content="Learn more about CONCEPTO-23, an annual event organized by IEEE SB SRM. Discover our mission to nurture innovation, inspire minds, and provide a platform for learning and growth." />
+                <meta name="keywords" content="About CONCEPTO-23, IEEE SRMIST, innovation, learning, growth" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <Navbar />
@@ -23,7 +25,6 @@ const About = () => {
             <FAQ />
             <Testimonials />
             <Footer />
-
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
+
 import '../app/globals.css';
 
 const Contact = () => {
@@ -8,6 +9,8 @@ const Contact = () => {
         <div>
             <Head>
                 <title>Contact Us - IEEE SRMIST</title>
+                <meta name="description" content="Contact IEEE SRMIST Student Branch. Find our contact information and follow us on social media. Reach out to us via email or phone." />
+                <meta name="keywords" content="Contact IEEE SRMIST, email, phone, social media" />
             </Head>
 
             <Navbar />

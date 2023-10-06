@@ -2,50 +2,57 @@ import React from 'react';
 
 const Workflow = () => {
     return (
-        <section className="bg-white py-16 mb-16">
+        <section className="py-16 mb-16">
             <div className="container mx-auto px-4 max-w-screen-xl">
                 <div className="text-center">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">Event Flow</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold text-black mb-16">Event Flow</h2>
                 </div>
                 {/* Day 1 */}
-                <div className="event-card bg-black border border-blue-700 rounded-lg p-6 shadow-lg mb-8 text-white">
+                <div className="event-card bg-white border border-blue-700 rounded-lg p-6 shadow-lg mb-8 text-black">
                     <div className="event-header flex items-center justify-between">
-                        <h3 className="text-xl font-semibold text-blue-700">Day 1: CONCEPTO - Your Gateway to Innovation</h3>
-                        <p className="text-gray-500">9:00 AM to 12:00 PM</p>
+                        <h3 className="text-xl font-semibold text-blue-700">Day 1: Explore and Create</h3>
                     </div>
                     <div className="event-details mt-4">
-                        <p className="text-lg font-semibold text-white">Session 1: Business Model Canvas</p>
-                        <p className="text-gray-500">Explore the world of business models with our expert speakers.</p>
-                        <p className="text-gray-500">Learn how to transform ideas into visual realities using the Business Model Canvas.</p>
-                        <p className="text-gray-500">Lunch Break (1:00 PM to 2:00 PM)</p>
-                        <p className="text-lg font-semibold text-white">Session 3: Team Building and Idea Creation</p>
-                        <p className="text-gray-500">Engage in interactive games and sessions to form teams and build connections.</p>
-                        <p className="text-gray-500">Work on your innovative ideas within given constraints to fuel your creativity.</p>
-                        <p className="text-gray-500">Session 2: Open Discussion on Startups</p>
-                        <p className="text-gray-500">Participate in a lively discussion to enhance your interaction and understanding.</p>
-                        <p className="text-gray-500">Get your questions answered and be ready to dive back into the event.</p>
+                        <p className="text-normal font-semibold text-black">Session 1 (9:00 AM to 12:00 PM): Understanding Business Models and Finding Inspiration</p>
+                        <p className="text-gray-500">Discover how business models work and the challenges they pose.</p>
+                        <p className="text-gray-500">Gain motivation from our speakers to fuel your innovative spirit.</p>
+                        <p className="text-normal font-semibold text-black">Session 2 (12:00 PM to 1:00 PM): Interactive Q&A and Networking</p>
+                        <p className="text-gray-500">Engage with our speakers in a lively Q&A session.</p>
+                        <p className="text-gray-500">Connect with like-minded participants and explore common interests.</p>
+                        <p className="text-normal font-semibold text-black">Session 3 (2:00 PM to 5:00 PM): Team Building and Innovative Thinking</p>
+                        <p className="text-gray-500">Dive into hands-on team-building activities.</p>
+                        <p className="text-gray-500">Develop solutions within constraints and learn how to scale your ideas.</p>
+                        <p className="text-gray-500">Evening: Prepare for the next day by crafting your presentations and pitches, tailored for potential investors.</p>
                     </div>
                 </div>
 
                 {/* Day 2 */}
-                <div className="event-card bg-black border border-blue-700 rounded-lg p-6 shadow-lg mb-8 text-white">
+                <div className="event-card bg-white border border-blue-700 rounded-lg p-6 shadow-lg mb-8 text-black">
                     <div className="event-header flex items-center justify-between">
-                        <h3 className="text-xl font-semibold text-blue-700">Day 2: CONCEPTO - Embrace the Innovation Revolution</h3>
-                        <p className="text-gray-500">9:00 AM to 12:00 PM</p>
+                        <h3 className="text-xl font-semibold text-blue-700">Day 2: Present and Excel</h3>
                     </div>
                     <div className="event-details mt-4">
-                        <p className="text-lg font-semibold text-white">Session 1: Presentation Review and Pitching Skills</p>
-                        <p className="text-gray-500">Get valuable insights from our expert speakers on improving your presentations.</p>
-                        <p className="text-gray-500">Learn how to pitch your ideas effectively to potential investors.</p>
-                        <p className="text-gray-500">Lunch Break (1:00 PM to 2:00 PM)</p>
-                        <p className="text-lg font-semibold text-white">Session 3: Judging and Presenting</p>
-                        <p className="text-gray-500">Showcase your innovative ideas and skills.</p>
-                        <p className="text-gray-500">Receive feedback from our esteemed panel of judges.</p>
-                        <p className="text-lg font-semibold text-white">Session 2: Work on Your Pitch and Presentation</p>
-                        <p className="text-gray-500">Collaborate with peers and mentors to refine your pitch and presentation skills.</p>
-                        <p className="text-gray-500">Be prepared for the final leg of your innovation journey.</p>
+                        <p className="text-normal font-semibold text-black">Session 1 (9:00 AM to 12:00 PM): Presentation Tips and Pitching Essentials</p>
+                        <p className="text-gray-500">Get expert recommendations on effective presentations and pitching.</p>
+                        <p className="text-gray-500">Learn what to focus on and what to avoid.</p>
+                        <p className="text-normal font-semibold text-black">Session 2 (12:00 PM to 1:00 PM): Refine Your Pitch and Presentation</p>
+                        <p className="text-gray-500">Work on enhancing your presentation and pitch based on the insights received.</p>
+                        <p className="text-normal font-semibold text-black">Session 3 (2:00 PM to 4:00 PM): Pitch Your Ideas and Face the Panel</p>
+                        <p className="text-gray-500">Present your ideas in a business setting.</p>
+                        <p className="text-gray-500">Receive valuable feedback and answer questions from our panel.</p>
+                        <p className="text-gray-500">Evening: Celebrate your achievements and network with fellow participants.</p>
                     </div>
                 </div>
+
+                {/* Event Highlights */}
+                <div className="text-2xl font-semibold text-blue-700 mb-2">Event Highlights:</div>
+                <ul className="list-disc pl-6 text-gray-500">
+                    <li>Gain insights into business models and innovation.</li>
+                    <li>Connect with industry experts and peers.</li>
+                    <li>Acquire hands-on experience in team building and problem-solving.</li>
+                    <li>Refine your presentation and pitching skills.</li>
+                    <li>Compete for prizes worth Rs 6,000 and recognition for your innovation.</li>
+                </ul>
             </div>
         </section>
     );
