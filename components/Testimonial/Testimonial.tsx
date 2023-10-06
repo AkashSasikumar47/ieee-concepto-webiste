@@ -10,25 +10,25 @@ const Testimonial = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="bg-gray-100 p-6 rounded-3xl shadow-lg">
                         <div className="text-lg md:text-xl font-semibold text-black mb-4">
-                            "CONCEPTO-23 was a game-changer for me! The sessions were incredibly insightful, and I left with a renewed sense of innovation and inspiration."
+                            "CONCEPTO is an annual highlight for me! The Ideathon inspires creativity, and I've won prizes that have boosted my innovative spirit."
                         </div>
                         <div className="text-base md:text-lg font-normal text-gray-500">- Neha Sharma</div>
                     </div>
                     <div className="bg-gray-100 p-6 rounded-3xl shadow-lg">
                         <div className="text-lg md:text-xl font-semibold text-black mb-4">
-                            "I've attended many events, but CONCEPTO-23 stands out. It provided me with practical knowledge, and the networking opportunities were invaluable."
+                            "CONCEPTO is not just an event; it's an experience. The practical knowledge and networking opportunities are unmatched, making it a must-attend."
                         </div>
                         <div className="text-base md:text-lg font-normal text-gray-500">- Rajesh Patel</div>
                     </div>
                     <div className="bg-gray-100 p-6 rounded-3xl shadow-lg">
                         <div className="text-lg md:text-xl font-semibold text-black mb-4">
-                            "As a student, CONCEPTO-23 was an eye-opener. The mentors were fantastic, and I felt like I was part of a vibrant community of innovators."
+                            "Participating in CONCEPTO as a student was a turning point. The mentorship and vibrant innovator community helped me shape my ideas."
                         </div>
                         <div className="text-base md:text-lg font-normal text-gray-500">- Priya Kapoor</div>
                     </div>
                     <div className="bg-gray-100 p-6 rounded-3xl shadow-lg">
                         <div className="text-lg md:text-xl font-semibold text-black mb-4">
-                            "The quality of speakers at CONCEPTO-23 was impressive. I gained valuable insights that I can apply to my future projects."
+                            "CONCEPTO sets a high standard with its quality of speakers. The insights gained here have been instrumental in my future projects."
                         </div>
                         <div className="text-base md:text-lg font-normal text-gray-500">- Arjun Gupta</div>
                     </div>

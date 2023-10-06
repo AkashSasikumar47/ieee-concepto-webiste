@@ -14,11 +14,11 @@ const FAQ = () => {
     const faqData = [
         {
             question: 'How can I register for CONCEPTO-23?',
-            answer: 'To register for CONCEPTO-23, simply click the "REGISTER" button on our homepage, fill out the registration form, and complete the payment process. You\'ll receive a confirmation email once your registration is successful.',
+            answer: 'To register for CONCEPTO-23, simply click the "REGISTER" button on our homepage, fill out the registration form, and complete the registration process. You\'ll receive a confirmation email once your registration is successful.',
         },
         {
-            question: 'What is the registration fee for the event?',
-            answer: 'The registration fee for CONCEPTO-23 is INR 99/- per person. This fee covers access to all event sessions and workshops.',
+            question: 'Is there a registration fee for the event?',
+            answer: 'No, CONCEPTO-23 is a free event. There is no registration fee, and all sessions and workshops are accessible at no cost.',
         },
         {
             question: 'Where is the venue for CONCEPTO-23?',

@@ -1,106 +1,165 @@
 import React from 'react';
+import './MentorsInfo.css';
 
 const MentorsInfo = () => {
-    // Define an array of mentor objects with their information
-    const mentors = [
+
+    const executiveBoardMembers = [
         {
-            name: 'Mentor 1',
-            designation: 'President',
-            photoUrl: 'public/Assets/Speakers/Speaker_1.png', // Replace with actual photo URL
+            name: 'Rohan Kumar',
+            designation: 'Chairperson',
+            photoUrl: '/Assets/Mentors/Executive Board/Chairperson.png',
         },
         {
-            name: 'Mentor 2',
-            designation: 'Vice President',
-            photoUrl: '/path/to/photo2.jpg', // Replace with actual photo URL
+            name: 'Vaishali V',
+            designation: 'Vice-Chairperson',
+            photoUrl: '/Assets/Mentors/Executive Board/Vice-Chairperson.png',
         },
         {
-            name: 'Mentor 3',
-            designation: 'Treasurer',
-            photoUrl: '/path/to/photo3.jpg', // Replace with actual photo URL
+            name: 'Nishanth Rao',
+            designation: 'Director',
+            photoUrl: '/Assets/Mentors/Executive Board/Director.png',
         },
         {
-            name: 'Mentor 4',
-            designation: 'Secretary',
-            photoUrl: '/path/to/photo4.jpg', // Replace with actual photo URL
+            name: 'Amrithavarshini B',
+            designation: 'WIE - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/WIE.png',
         },
         {
-            name: 'Mentor 5',
-            designation: 'Advisor',
-            photoUrl: '/path/to/photo5.jpg', // Replace with actual photo URL
+            name: 'Sriram Mandalika',
+            designation: 'RnD - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/RnD.png',
         },
         {
-            name: 'Mentor 6',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo6.jpg', // Replace with actual photo URL
+            name: 'Prasoon Agnihotri',
+            designation: 'PELS & CES - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/PELS&CES.png',
         },
         {
-            name: 'Mentor 7',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo7.jpg', // Replace with actual photo URL
+            name: 'Bhoovi Chauhan',
+            designation: 'IAS - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/IAS.png',
         },
         {
-            name: 'Mentor 8',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo8.jpg', // Replace with actual photo URL
+            name: 'Kanishk K U',
+            designation: 'MnC - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/MnC.png',
         },
         {
-            name: 'Mentor 9',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo9.jpg', // Replace with actual photo URL
+            name: 'Harinarayanan R',
+            designation: 'Sponsorship - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/S&M(2).png',
         },
         {
-            name: 'Mentor 10',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo10.jpg', // Replace with actual photo URL
+            name: 'Shiva Kumar',
+            designation: 'S&M - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/S&M(1).png',
         },
         {
-            name: 'Mentor 11',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo11.jpg', // Replace with actual photo URL
+            name: 'Yashovardhan',
+            designation: 'CLP - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/CLP.png',
         },
         {
-            name: 'Mentor 12',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo12.jpg', // Replace with actual photo URL
-        },
-        {
-            name: 'Mentor 13',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo13.jpg', // Replace with actual photo URL
-        },
-        {
-            name: 'Mentor 14',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo14.jpg', // Replace with actual photo URL
-        },
-        {
-            name: 'Mentor 15',
-            designation: 'Board Member',
-            photoUrl: '/path/to/photo15.jpg', // Replace with actual photo URL
+            name: 'Akash S',
+            designation: 'WAD - Head',
+            photoUrl: '/Assets/Mentors/Executive Board/WAD.png',
         },
     ];
 
+    const administrativeBoardMembers = [
+        {
+            name: 'Sampurna Sahoo',
+            designation: 'Secretary',
+            photoUrl: '/path/to/admin_photo1.jpg',
+        },
+        {
+            name: 'Dipanwita Saha',
+            designation: 'Joint-Sectretary',
+            photoUrl: '/Assets/Mentors/Admin Board/Joint-Secretary.png',
+        },
+        {
+            name: 'Simran Malhotra',
+            designation: 'Secretary - WIE',
+            photoUrl: '/Assets/Mentors/Admin Board/WIE.png',
+        },
+        {
+            name: 'Arwah Kamdar',
+            designation: 'Secretary - RnD',
+            photoUrl: '/Assets/Mentors/Admin Board/RnD.png',
+        },
+        {
+            name: 'Aswin Sujith Varghese',
+            designation: 'Secretary - S&M',
+            photoUrl: '/Assets/Mentors/Admin Board/S&M.png',
+        },
+        {
+            name: 'K Hari Prakash ',
+            designation: 'Secretary - MnC',
+            photoUrl: '/Assets/Mentors/Admin Board/MnC(1).png',
+        },
+        {
+            name: 'Smilika Reddy',
+            designation: 'Secretary - MnC',
+            photoUrl: '/Assets/Mentors/Admin Board/MnC(2).png',
+        },
+        {
+            name: 'Jyothi Prakash B',
+            designation: 'Secretary - CLP',
+            photoUrl: '/Assets/Mentors/Admin Board/CLP.png',
+        },
+
+    ];
+
     return (
-        <section className="bg-white py-16 mb-16">
-            <div className="container mx-auto px-4 max-w-screen-xl">
-                <div className="text-center">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">Meet Our Executive Board Mentors</h2>
+        <div>
+            <section className="mentors-section bg-white py-16 mb-16">
+                <div className="container mx-auto px-4 max-w-screen-xl">
+                    <div className="text-center">
+                        <h2 className="text-3xl md:text-4xl font-semibold text-black mb-16">Meet Our Executive Board Mentors</h2>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                        {executiveBoardMembers.map((mentor, index) => (
+                            <div key={index} className="mentor-card">
+                                <img
+                                    src={mentor.photoUrl}
+                                    alt={mentor.name}
+                                    className="mentor-image"
+                                    style={{ maxWidth: '400px', maxHeight: '512px' }}
+                                />
+                                <div className="mentor-details">
+                                    <div className="mentor-name">{mentor.name}</div>
+                                    <div className="mentor-designation">{mentor.designation}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    {mentors.map((mentor, index) => (
-                        <div key={index} className="bg-gray-100 p-4 rounded-lg shadow-lg">
-                            <img
-                                src={mentor.photoUrl}
-                                alt={mentor.name}
-                                className="w-full h-auto rounded-full"
-                            />
-                            <div className="text-lg font-semibold mt-4">{mentor.name}</div>
-                            <div className="text-sm text-gray-500">{mentor.designation}</div>
-                        </div>
-                    ))}
+            </section>
+
+            <section className="mentors-section bg-white py-16 mb-16">
+                <div className="container mx-auto px-4 max-w-screen-xl">
+                    <div className="text-center">
+                        <h2 className="text-3xl md:text-4xl font-semibold text-black mb-16">Meet Our Administrative Board Members</h2>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {administrativeBoardMembers.map((admin, index) => (
+                            <div key={index} className="mentor-card">
+                                <img
+                                    src={admin.photoUrl}
+                                    alt={admin.name}
+                                    className="mentor-image"
+                                    style={{ maxWidth: '400px', maxHeight: '512px' }}
+                                />
+                                <div className="mentor-details">
+                                    <div className="mentor-name">{admin.name}</div>
+                                    <div className="mentor-designation">{admin.designation}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 };
 

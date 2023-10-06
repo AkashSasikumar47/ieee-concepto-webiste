@@ -1,0 +1,38 @@
+/* MentorsInfo.css */
+
+.mentor-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 105, 143, 0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.mentor-card:hover {
+    transform: translateY(-4px);
+}
+
+.mentor-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.mentor-details {
+    padding: 16px;
+}
+
+.mentor-name {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.mentor-designation {
+    font-size: 18px;
+    color: #666;
+}

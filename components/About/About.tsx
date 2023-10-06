@@ -1,51 +1,134 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import 'intersection-observer';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
+    const sectionRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        if (!sectionRef.current) return;
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    sectionRef.current?.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        observer.observe(sectionRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
+    const sectionStyle = `
+    .bg-white {
+      background-color: white;
+    }
+
+    .animate-fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .animate-fade-in.animate-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  `;
+
     return (
-        <section className="bg-white text-black mb-16">
-            <div className="container mx-auto px-4 py-8 max-w-screen-xl">
-                <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">Discover IEEE SRMIST Student Branch</h1>
+        <section
+            ref={sectionRef}
+            className="bg-white text-black mb-16"
+            style={{ background: 'white' }}
+        >
+            <style>{sectionStyle}</style>
+            <div
+                className="container mx-auto px-4 py-8 max-w-screen-xl"
+            >
+                <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">
+                    Discover IEEE SRMIST Student Branch
+                </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="w-full">
                         <div className="flex items-center mb-4">
-                            <img src="/Assets/Miscellaneous/globe.svg" alt="Globe Icon" className="w-10 h-10 mr-4" />
-                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Our Founding</h3>
+                            <img
+                                src="/Assets/Miscellaneous/globe.svg"
+                                alt="Globe Icon"
+                                className="w-10 h-10 mr-4"
+                            />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">
+                                Our Founding
+                            </h3>
                         </div>
                         <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
-                            IEEE SB SRM was established in [year] with a vision to inspire, educate, and empower the next generation of engineers and innovators.
+                            IEEE SRMIST SB was established in 2015 with a vision to
+                            inspire, educate, and empower the next generation of
+                            engineers and innovators.
                         </p>
                     </div>
                     <div className="w-full">
                         <div className="flex items-center mb-4">
-                            <img src="/Assets/Miscellaneous/loyalty.svg" alt="Loyalty Icon" className="w-10 h-10 mr-4" />
-                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Our Values</h3>
+                            <img
+                                src="/Assets/Miscellaneous/loyalty.svg"
+                                alt="Loyalty Icon"
+                                className="w-10 h-10 mr-4"
+                            />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">
+                                Our Values
+                            </h3>
                         </div>
                         <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
-                            We are driven by innovation, education, community, and excellence. These values guide our actions and initiatives.
+                            We are driven by innovation, education, community, and
+                            excellence. These values guide our actions and initiatives.
                         </p>
                     </div>
                     <div className="w-full">
                         <div className="flex items-center mb-4">
-                            <img src="/Assets/Miscellaneous/history.svg" alt="History Icon" className="w-10 h-10 mr-4" />
-                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Our Journey</h3>
+                            <img
+                                src="/Assets/Miscellaneous/history.svg"
+                                alt="History Icon"
+                                className="w-10 h-10 mr-4"
+                            />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">
+                                Our Journey
+                            </h3>
                         </div>
                         <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
-                            Over the years, we've organized impactful events, workshops, and initiatives, fostering talent and technological advancement.
+                            Over the years, we've organized impactful events,
+                            workshops, and initiatives, fostering talent and
+                            technological advancement.
                         </p>
                     </div>
                     <div className="w-full">
                         <div className="flex items-center mb-4">
-                            <img src="/Assets/Miscellaneous/target.svg" alt="Target Icon" className="w-10 h-10 mr-4" />
-                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">Membership Benefits</h3>
+                            <img
+                                src="/Assets/Miscellaneous/target.svg"
+                                alt="Target Icon"
+                                className="w-10 h-10 mr-4"
+                            />
+                            <h3 className="text-xl md:text-2xl font-semibold text-blue-700">
+                                Membership Benefits
+                            </h3>
                         </div>
                         <p className="text-base md:text-lg font-normal text-gray-700 leading-6 md:leading-7">
-                            Joining IEEE opens doors to a world of resources, networking, and professional development opportunities.
+                            Joining IEEE opens doors to a world of resources,
+                            networking, and professional development opportunities.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default About;

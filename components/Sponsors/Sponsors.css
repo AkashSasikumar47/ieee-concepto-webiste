@@ -3,13 +3,13 @@
 .sponsors-container {
     display: flex;
     align-items: center;
-    max-height: 128px;
+    max-height: auto;
     overflow: hidden;
     animation: loopSponsors 20s linear infinite;
 }
 
 .sponsor {
-    margin-right: 128px;
+    margin-right: auto;
     flex: 1;
 }
 

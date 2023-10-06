@@ -14,6 +14,10 @@ const Registration = () => {
         };
     }, []);
 
+    const redirectToForm = () => {
+        window.open('https://uf0467nch79.typeform.com/to/PPe8o3gV', '_blank');
+    };
+
     return (
         <div className="relative bg-white mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8 mb-16">
             {/* Desktop Section */}
@@ -25,16 +29,18 @@ const Registration = () => {
                     </video>
                     <div className="absolute inset-0 flex flex-col items-center justify-start">
                         <div className="text-white p-8 text-center">
-                            <div className="text-6xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="text-6xl font-extrabold font-['Plus Jakarta Sans']">CONCEPTO-23</div>
                             <div className="mt-4"></div>
-                            <button className="px-8 py-2 bg-black rounded-[20.01px] shadow-lg inline-block text-l font-semibold font-['Plus Jakarta Sans'] text-white">
+                            <button
+                                onClick={redirectToForm}
+                                className="px-8 py-2 bg-black rounded-[20.01px] shadow-lg inline-block text-l font-semibold font-['Plus Jakarta Sans'] text-white transition-transform transform-gpu hover:scale-105"
+                            >
                                 REGISTER
                             </button>
                         </div>
                     </div>
                 </div>
             )}
-
 
             {/* Mobile Section */}
             {isMobile && (
@@ -49,15 +55,19 @@ const Registration = () => {
                     </div>
                     <div className="absolute inset-0 flex flex-col items-center justify-start">
                         <div className="text-white p-8 text-center">
-                            <div className="text-l font-extrabold font-['Plus Jakarta Sans']">CONCEPTO23</div>
+                            <div className="text-l font-extrabold font-['Plus Jakarta Sans']">CONCEPTO-23</div>
                             <div className="mt-2 px-2 py-1 bg-black rounded-[8px] shadow-lg inline-block">
-                                <div className="text-xs font-base font-['Plus Jakarta Sans'] text-white">REGISTER</div>
+                                <div
+                                    onClick={redirectToForm}
+                                    className="text-xs font-base font-['Plus Jakarta Sans'] text-white transition-transform transform-gpu hover:scale-105"
+                                >
+                                    REGISTER
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             )}
-
         </div>
     );
 }
