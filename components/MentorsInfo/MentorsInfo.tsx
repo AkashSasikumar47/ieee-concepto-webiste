@@ -70,7 +70,7 @@ const MentorsInfo = () => {
         {
             name: 'Sampurna Sahoo',
             designation: 'Secretary',
-            photoUrl: '/path/to/admin_photo1.jpg',
+            photoUrl: '/Assets/Mentors/Admin Board/Secretary.png',
         },
         {
             name: 'Dipanwita Saha',
