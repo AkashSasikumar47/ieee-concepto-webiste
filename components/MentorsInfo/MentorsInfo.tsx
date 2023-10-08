@@ -21,47 +21,47 @@ const MentorsInfo = () => {
         },
         {
             name: 'Amrithavarshini B',
-            designation: 'WIE - Head',
+            designation: 'Head - Women in Engineering',
             photoUrl: '/Assets/Mentors/Executive Board/WIE.png',
         },
         {
             name: 'Sriram Mandalika',
-            designation: 'RnD - Head',
+            designation: 'Head - Research & Development',
             photoUrl: '/Assets/Mentors/Executive Board/RnD.png',
         },
         {
             name: 'Prasoon Agnihotri',
-            designation: 'PELS & CES - Head',
+            designation: 'Head - PELS & CES',
             photoUrl: '/Assets/Mentors/Executive Board/PELS&CES.png',
         },
         {
             name: 'Bhoovi Chauhan',
-            designation: 'IAS - Head',
+            designation: 'Head - IAS',
             photoUrl: '/Assets/Mentors/Executive Board/IAS.png',
         },
         {
             name: 'Kanishk K U',
-            designation: 'MnC - Head',
+            designation: 'Head - Media & Content',
             photoUrl: '/Assets/Mentors/Executive Board/MnC.png',
         },
         {
             name: 'Harinarayanan R',
-            designation: 'Sponsorship - Head',
+            designation: 'Head - Sponsorship & Marketing',
             photoUrl: '/Assets/Mentors/Executive Board/S&M(2).png',
         },
         {
             name: 'Shiva Kumar',
-            designation: 'S&M - Head',
+            designation: 'Head - Sponsorship & Marketing',
             photoUrl: '/Assets/Mentors/Executive Board/S&M(1).png',
         },
         {
             name: 'Yashovardhan',
-            designation: 'CLP - Head',
+            designation: 'Head - CLP',
             photoUrl: '/Assets/Mentors/Executive Board/CLP.png',
         },
         {
             name: 'Akash S',
-            designation: 'WAD - Head',
+            designation: 'Head - Web & App Development',
             photoUrl: '/Assets/Mentors/Executive Board/WAD.png',
         },
     ];
