@@ -53,7 +53,8 @@ const Hero = () => {
                 {/* Desktop Section */}
                 {!isMobile && (
                     <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px]">
-                        <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted controls={false}>
+                        <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
+                            {/* Add the 'autoPlay' attribute */}
                             <source src="Assets/Videos/Hero_video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
@@ -67,7 +68,7 @@ const Hero = () => {
                     </div>
                 )}
 
-                {/* Rest of your component */}
+                {/* Rest of the component */}
                 <div className="w-full md:w-[826px] h-[740px] absolute top-0 right-0">
                     <img className="w-540 h-540 md:w-96 mt-64 md:mt-0 mx-auto md:right-20 md:top-48 absolute" src="Assets/Astronaut.svg" />
 
@@ -100,7 +101,8 @@ const Hero = () => {
                 <div className="md:hidden relative">
                     <div className="relative w-full aspect-w-9 aspect-h-16 overflow-hidden rounded-xl">
                         <div className="video-container">
-                            <video className="object-cover object-center w-full h-full rounded-xl" autoPlay loop muted controls={false}>
+                            <video className="object-cover object-center w-full h-full rounded-xl" autoPlay loop muted>
+                                {/* Add the 'autoPlay' attribute */}
                                 <source src="Assets/Videos/Hero_video.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
