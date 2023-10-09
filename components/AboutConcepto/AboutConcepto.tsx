@@ -1,30 +1,22 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 
 const AboutConcepto = () => {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.5, 
-    });
-
     const sectionStyle = `
     .about-concepto {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: ${inView ? 'fadeIn 1s ease forwards' : 'none'};
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .about-concepto img {
+      max-width: 512px;
+      height: auto;
+      border-radius: 8px;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
     `;
 
     return (
         <section
-            ref={ref}
             className="about-concepto bg-white py-16 mb-16 max-w-screen-xl mx-auto px-4"
             style={{ background: 'white' }}
         >
@@ -46,8 +38,8 @@ const AboutConcepto = () => {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-screen-md md:w-1/2 mt-8 md:mt-0">
-                    <img src="Assets/Planet.svg" alt="Concepto23 Image" className="w-full h-auto" />
+                <div className="max-w-screen-md md:w-1/2 mt-8 md:mt-0 image-container">
+                    <img src="/Assets/First_Poster.svg" alt="Concepto23 Image" className="w-full h-auto" />
                 </div>
             </div>
         </section>
