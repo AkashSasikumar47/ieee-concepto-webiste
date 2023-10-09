@@ -1,15 +1,13 @@
-/* Sponsors.css */
-
 .sponsors-container {
     display: flex;
     align-items: center;
     max-height: auto;
     overflow: hidden;
-    animation: loopSponsors 20s linear infinite;
+    animation: loopSponsors 40s linear infinite;
 }
 
 .sponsor {
-    margin-right: auto;
+    margin-right: 32px;
     flex: 1;
 }
 
