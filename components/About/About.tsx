@@ -1,60 +1,16 @@
-import React, { useEffect, useRef } from 'react';
-import 'intersection-observer';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 
 const About = () => {
-    const sectionRef = useRef<HTMLDivElement | null>(null);
-
-    useEffect(() => {
-        if (!sectionRef.current) return;
-
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.2,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    sectionRef.current?.classList.add('animate-fade-in');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, options);
-
-        observer.observe(sectionRef.current);
-
-        return () => observer.disconnect();
-    }, []);
-
     const sectionStyle = `
     .bg-white {
       background-color: white;
     }
-
-    .animate-fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-
-    .animate-fade-in.animate-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
   `;
 
     return (
-        <section
-            ref={sectionRef}
-            className="bg-white text-black mb-16"
-            style={{ background: 'white' }}
-        >
+        <section className="bg-white text-black mb-16" style={{ background: 'white' }}>
             <style>{sectionStyle}</style>
-            <div
-                className="container mx-auto px-4 py-8 max-w-screen-xl"
-            >
+            <div className="container mx-auto px-4 py-8 max-w-screen-xl">
                 <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">
                     Discover IEEE SRMIST Student Branch
                 </h1>
