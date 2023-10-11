@@ -93,7 +93,9 @@ const Hero = () => {
                     <p className="text-gray-600 text-l md:text-xl leading-relaxed">
                         Join the Innovation Revolution - Register Today and Ignite Your Creative Potential!
                     </p>
-                    <a href="/About" className="text-blue-500 underline mt-4 inline-block">Learn More</a>
+                    <a href="https://forms.gle/yeQDynfTv4P8eFWx9" className="text-white bg-[#A9C2CB] rounded-full py-3 px-6 mt-4 inline-block text-center hover:bg-black transition duration-300 ease-in-out">
+                        REGISTER
+                    </a>
                 </div>
             </div>
 
