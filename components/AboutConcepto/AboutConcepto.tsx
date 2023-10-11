@@ -39,7 +39,7 @@ const AboutConcepto = () => {
                     </div>
                 </div>
                 <div className="max-w-screen-md md:w-1/2 mt-8 md:mt-0 image-container">
-                    <img src="/Assets/First_Poster.svg" alt="Concepto23 Image" className="w-full h-auto" />
+                    <img src="/Assets/Miscellaneous/Poster_2.png" alt="Concepto23 Image" className="w-full h-auto" />
                 </div>
             </div>
         </section>
