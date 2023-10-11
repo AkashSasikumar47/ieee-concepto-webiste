@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
+import Image from 'next/image';
 
 import '../app/globals.css';
 
@@ -42,14 +43,9 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Add your contact form here */}
-                    <div className="mt-8">
-                        <h2 className="text-2xl font-semibold">Send us a Message</h2>
-                        {/* Add your contact form JSX here */}
-                    </div>
                 </div>
             </div>
+
         </div>
     );
 };
