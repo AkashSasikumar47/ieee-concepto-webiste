@@ -13,24 +13,24 @@ const FAQ = () => {
 
     const faqData = [
         {
-            question: 'How can I register for CONCEPTO-23?',
-            answer: 'To register for CONCEPTO-23, simply click the "REGISTER" button on our homepage, fill out the registration form, and complete the registration process. You\'ll receive a confirmation email once your registration is successful.',
+            question: 'What is CONCEPTO Registration all about?',
+            answer: 'CONCEPTO Registration is your gateway to an exceptional journey of concept and ideation. It\'s a carnival of opportunities presented by IEEE SRM Student Branch, offering a platform to showcase innovative ideas, understand business models, refine presentation skills, and unleash your techie potential. It\'s a two-day event designed to foster creativity, problem-solving, and innovation to address societal challenges.',
         },
         {
-            question: 'Is there a registration fee for the event?',
-            answer: 'No, CONCEPTO-23 is a free event. There is no registration fee, and all sessions and workshops are accessible at no cost.',
+            question: 'What is the timeline for the CONCEPTO event?',
+            answer: 'The CONCEPTO event spans two days: Day 1 focuses on exploring and creating, with sessions covering understanding business models, finding inspiration, interactive Q&A, networking, team building, and innovative thinking. Day 2 centers around presentation and excellence, with sessions on presentation tips, pitching essentials, refining pitches and presentations, pitching ideas to a panel, receiving feedback, and networking.',
         },
         {
-            question: 'Where is the venue for CONCEPTO-23?',
-            answer: 'CONCEPTO-23 will be held at TP 501/502. You can reach the venue by 9 am.',
+            question: 'Is there a registration fee for the CONCEPTO event?',
+            answer: 'Yes, IEEE SRM Student Branch is introducing registration fees for participants attending the CONCEPTO event. Individual registration is priced at only Rs. 99, and a team of two can register for only Rs. 149.',
         },
         {
-            question: 'Can I attend specific sessions or do I need to register for the entire event?',
-            answer: 'You have the flexibility to choose which sessions to attend. While we recommend registering for the entire event to maximize your experience, you can also register for specific sessions of interest.',
+            question: 'What can I expect from the CONCEPTO event?',
+            answer: 'CONCEPTO offers a valuable space to share and develop your concepts, whether you have a concrete solution to a specific problem or a collection of ideas that could lead to meaningful innovations. It\'s an opportunity to enhance and explore your professional skills, engage with like-minded participants, receive expert recommendations on effective presentations and pitching, and present your ideas in a business setting. The event also provides networking opportunities and the chance to celebrate your achievements.',
         },
         {
-            question: 'What is the schedule for CONCEPTO-23?',
-            answer: 'The event spans two days with a variety of sessions, workshops, and activities. You can find the detailed schedule on our "Event Schedule" page, which includes session timings, topics, and speaker information.',
+            question: 'How can I register for the CONCEPTO event?',
+            answer: 'To register for the CONCEPTO event, simply follow the registration process. You can register as an individual for Rs. 99 or as a team of two for Rs. 149. Click the "REGISTER" button on our homepage to get started and embark on this exciting journey of innovation and ideation.',
         },
         {
             question: 'What should I bring to the event?',
@@ -41,6 +41,7 @@ const FAQ = () => {
             answer: 'Yes, we will provide refreshments to keep you energized throughout the day. You can expect snacks and beverages during designated break times.',
         },
     ];
+
 
     return (
         <section className="bg-white py-16 mb-16">
