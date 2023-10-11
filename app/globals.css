@@ -5,9 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-color: #ffffff;
-  /* Change background color to green */
   --text-color: #000000;
-  /* Black */
   --blue-700: #0038FF;
   --neutral-950: #020305;
   --gray-900: #0D0F12;
@@ -22,37 +20,26 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-color: #ffffff;
-    /* Change background color to black in dark mode */
     --text-color: #000000;
-    /* White in dark mode */
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--background-color);
-  /* Set background color */
   font-family: var(--font-family);
-  /* Set font family */
 }
 
 a {
   color: var(--blue-700);
-  /* Apply blue color to links */
 }
 
 button {
   background-color: var(--blue-700);
-  /* Apply blue background color to buttons */
   color: var(--white);
-  /* Apply white text color to buttons */
 }
 
 input {
   background-color: var(--neutral-950);
-  /* Apply neutral-950 background color to inputs */
   color: var(--text-color);
-  /* Apply text color to inputs */
 }
-
-/* Add more styles for other elements as needed */
