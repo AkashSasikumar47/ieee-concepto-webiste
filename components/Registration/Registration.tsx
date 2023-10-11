@@ -15,7 +15,7 @@ const Registration = () => {
     }, []);
 
     const redirectToForm = () => {
-        window.open('https://uf0467nch79.typeform.com/to/PPe8o3gV', '_blank');
+        window.open('https://forms.gle/yeQDynfTv4P8eFWx9', '_blank');
     };
 
     return (
