@@ -5,7 +5,7 @@ const Workflow = () => {
         <section className="py-16 mb-16">
             <div className="container mx-auto px-4 max-w-screen-xl">
                 <div className="text-center">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-black mb-16">Event Flow</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold text-black mb-6">Event Flow</h2>
                 </div>
                 {/* Day 1 */}
                 <div className="event-card bg-white border border-blue-700 rounded-lg p-6 shadow-lg mb-8 text-black">
@@ -51,7 +51,7 @@ const Workflow = () => {
                     <li>Connect with industry experts and peers.</li>
                     <li>Acquire hands-on experience in team building and problem-solving.</li>
                     <li>Refine your presentation and pitching skills.</li>
-                    <li>Compete for prizes worth Rs 6,000 and recognition for your innovation.</li>
+                    <li>Compete for cash prizes and recognition for your innovation.</li>
                 </ul>
             </div>
         </section>
