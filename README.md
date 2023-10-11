@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">CONCEPTO-23 Website</h1>
 
-## Getting Started
+<p align="center">
+  Official website for CONCEPTO-23, your gateway to innovation and ideation.
+</p>
 
-First, run the development server:
+<p align="center">
+  <img src="public/Assets/Miscellaneous/ogImage.png" alt="Banner Image">
+</p>
+
+<p align="center">
+  Built with <a href="https://nextjs.org/" target="_blank">Next.js</a>
+</p>
+
+## 🚀 Getting Started
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -12,6 +24,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
