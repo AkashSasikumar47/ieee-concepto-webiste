@@ -7,6 +7,16 @@ const speakersData = [
         description: 'An accomplished sales leader and visionary CEO at The Future Wall, driving innovation and value creation in the subscription-based Smart display network industry.',
     },
     {
+        name: 'Srividya Rajgopal',
+        photoSrc: '/Assets/Speakers/Speaker_3.png',
+        description: 'Co-Founder & COO at Pauket',
+    },
+    {
+        name: 'Arun Rahiah',
+        photoSrc: '/Assets/Speakers/Speaker_4.png',
+        description: 'Angel Investors CEO & Managing Partner at Billionaire Venture Capital',
+    },
+    {
         name: 'Rohan Kumar',
         photoSrc: '/Assets/Speakers/Speaker_2.png',
         description: 'Passionate entrepreneur, content creator, and podcast host dedicated to empowering students and inspiring positive change in the world.',

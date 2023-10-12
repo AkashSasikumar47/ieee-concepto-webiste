@@ -51,7 +51,7 @@ const Navbar = () => {
                         {!isMobileMenuOpen && (
                             <a
                                 href="https://forms.gle/yeQDynfTv4P8eFWx9"
-                                className="w-[137px] h-[47px] px-[32px] py-[16px] bg-[#A9C2CB] rounded-[14px] shadow-md inline-flex items-center justify-center text-white text-lg font-semibold font-['Plus Jakarta Sans'] hover:bg-black transition duration-300 ease-in-out"
+                                className="w-[137px] h-[47px] px-[32px] py-[16px] bg-black rounded-[14px] shadow-md inline-flex items-center justify-center text-white text-lg font-semibold font-['Plus Jakarta Sans'] hover:bg-black transition duration-300 ease-in-out"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -70,7 +70,7 @@ const Navbar = () => {
                             {/* Render the button inside the mobile menu */}
                             <a
                                 href="https://forms.gle/yeQDynfTv4P8eFWx9"
-                                className="w-[96px] h-[32px] px-[12px] py-[12px] bg-[#A9C2CB] rounded-[14px] shadow-md inline-flex items-center justify-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] hover:bg-black transition duration-300 ease-in-out"
+                                className="w-[96px] h-[32px] px-[12px] py-[12px] bg-black rounded-[14px] shadow-md inline-flex items-center justify-center text-white text-xs font-semibold font-['Plus Jakarta Sans'] hover:bg-black transition duration-300 ease-in-out"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

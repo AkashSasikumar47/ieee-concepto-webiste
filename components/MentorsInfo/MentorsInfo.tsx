@@ -20,7 +20,7 @@ const MentorsInfo = () => {
             photoUrl: '/Assets/Mentors/Executive Board/Director.png',
         },
         {
-            name: 'Amrithavarshini B',
+            name: 'Amirthavarshini B',
             designation: 'Head - Women in Engineering',
             photoUrl: '/Assets/Mentors/Executive Board/WIE.png',
         },
