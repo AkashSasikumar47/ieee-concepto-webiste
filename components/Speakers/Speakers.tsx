@@ -17,9 +17,9 @@ const speakersData = [
         description: 'Angel Investors CEO & Managing Partner at Billionaire Venture Capital',
     },
     {
-        name: 'Rohan Kumar',
+        name: 'Nithin Alexander',
         photoSrc: '/Assets/Speakers/Speaker_2.png',
-        description: 'Passionate entrepreneur, content creator, and podcast host dedicated to empowering students and inspiring positive change in the world.',
+        description: 'Founder of Underdogs of Madras community | CEO of Xander Media | We build Superfans for your business| Community Building as a Service (CBaaS)',
     },
 ];
 
