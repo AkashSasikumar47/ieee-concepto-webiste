@@ -11,6 +11,14 @@ const About = () => {
         <section className="bg-white text-black mb-16" style={{ background: 'white' }}>
             <style>{sectionStyle}</style>
             <div className="container mx-auto px-4 py-8 max-w-screen-xl">
+                <div className="text-center mb-16">
+                    <img
+                        src="/Assets/Sponsors/reaidy-logo1.png"
+                        alt="Event Sponsor Logo"
+                        className="w-50 h-20 mx-auto mb-4"
+                    />
+                    <p className="text-sm font-medium text-gray-700">Event Sponsor: Reaidy</p>
+                </div>
                 <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">
                     Discover IEEE SRMIST Student Branch
                 </h1>
