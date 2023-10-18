@@ -15,9 +15,14 @@ const About = () => {
                     <img
                         src="/Assets/Sponsors/reaidy-logo1.png"
                         alt="Event Sponsor Logo"
+                        className="w-50 h-20 mx-auto mb-8"
+                    />
+                    <img
+                        src="/Assets/Sponsors/xyzDomain.png"
+                        alt="Event Sponsor Logo"
                         className="w-50 h-20 mx-auto mb-4"
                     />
-                    <p className="text-sm font-medium text-gray-700">Event Sponsor: Reaidy</p>
+                    <p className="text-sm font-medium text-gray-700">Event Sponsors</p>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">
                     Discover IEEE SRMIST Student Branch
