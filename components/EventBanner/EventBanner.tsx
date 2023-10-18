@@ -126,7 +126,7 @@ const EventBanner = () => {
 
             {/* Pizza Section */}
             {!isMobile && (
-                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px]">
+                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
                     <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
                         <source src="/Assets/Videos/PizzaBreak.mov" type="video/mp4" />
                         Your browser does not support the video tag.
@@ -151,6 +151,28 @@ const EventBanner = () => {
                     Take a moment to recharge, connect with fellow innovators, and prepare for an exciting afternoon of ideation and fun!
                 </p>
             </div>
+
+            {/* Conclusion Section */}
+            {!isMobile && (
+                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
+                    <img
+                        src="/Assets/Miscellaneous/TeamMembers.jpg"
+                        alt="Conclusion Image"
+                        className="object-cover object-center w-full h-full rounded-3xl"
+                    />
+                </div>
+            )}
+
+            {/* Information on the left */}
+            <div className="p-6 max-w-[720px] animate-fade-in">
+                <h1 className="text-xl md:text-4xl font-bold font-sans text-black mb-4 mt-12">
+                    We Hope You Had an Amazing Experience at <strong>CONCEPTO-23</strong>.
+                </h1>
+                <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+                    As the event comes to a close, we want to express our gratitude for your participation and enthusiasm. We hope you enjoyed the innovative discussions and networking sessions.
+                </p>
+            </div>
+
         </div>
     );
 }
