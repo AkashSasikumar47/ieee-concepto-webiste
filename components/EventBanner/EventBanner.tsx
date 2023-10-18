@@ -151,8 +151,6 @@ const EventBanner = () => {
                     Take a moment to recharge, connect with fellow innovators, and prepare for an exciting afternoon of ideation and fun!
                 </p>
             </div>
-
-            
         </div>
     );
 }
