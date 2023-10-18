@@ -111,6 +111,18 @@ const EventBanner = () => {
                     </div>
                 </div>
             )}
+
+            {/* Quiz Details Section */}
+            <div className="max-w-[720px] text-center mx-auto my-8 animate-fade-in">
+                <h2 className="text-2xl md:text-3xl font-bold font-sans text-black mb-4">
+                    Quiz Details
+                </h2>
+                <p className="text-xl text-gray-600">
+                    Join our quiz at <a href="https://joinmyquiz.com/pro" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">joinmyquiz.com/pro</a>
+                    <br />
+                    Quiz ID: 925 585
+                </p>
+            </div>
         </div>
     );
 }
