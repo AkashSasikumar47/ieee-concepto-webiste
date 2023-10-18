@@ -5,7 +5,7 @@ const EventBanner = () => {
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
     function calculateTimeRemaining() {
-        const eventDate = new Date('2023-10-18T09:00:00'); // October 18, 2023, 9:00 AM
+        const eventDate = new Date('2023-10-18T10:00:00'); // October 18, 2023, 10:00 AM
         const currentDate = new Date();
         const timeDifference = eventDate.getTime() - currentDate.getTime();
 
