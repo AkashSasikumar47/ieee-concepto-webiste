@@ -5,7 +5,7 @@ const EventBanner = () => {
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
     function calculateTimeRemaining() {
-        const eventDate = new Date('2023-10-18T10:00:00'); // October 18, 2023, 10:00 AM
+        const eventDate = new Date('2023-10-18T17:00:00'); // October 18, 2023, 5:00 PM
         const currentDate = new Date();
         const timeDifference = eventDate.getTime() - currentDate.getTime();
 
@@ -71,7 +71,7 @@ const EventBanner = () => {
 
                     {/* Smaller Black Card with Countdown */}
                     <div className="bg-black rounded-2xl p-6 text-white absolute right-[4%] md:right-[150px] bottom-[36px] md:bottom-[10%] animate-fade-in">
-                        <h2 className="text-lg font-semibold mb-2">Event Countdown</h2>
+                        <h2 className="text-lg font-semibold mb-2">Event Ends</h2>
                         <div id="countdown" className="text-sm text-[#EDDAC5] font-semibold">
                             <span id="hours">{timeRemaining.hours.toString().padStart(2, '0')}</span>&nbsp;Hours&nbsp;
                             <span id="minutes">{timeRemaining.minutes.toString().padStart(2, '0')}</span>&nbsp;Minutes&nbsp;
@@ -112,7 +112,7 @@ const EventBanner = () => {
                 </div>
             )}
 
-            {/* Quiz Details Section */}
+            {/* Quiz Details Section 
             <div className="max-w-[720px] text-center mx-auto my-8 animate-fade-in">
                 <h2 className="text-2xl md:text-3xl font-bold font-sans text-black mb-4">
                     Quiz Details
@@ -122,7 +122,37 @@ const EventBanner = () => {
                     <br />
                     Quiz ID: 925 585
                 </p>
+            </div> */}
+
+            {/* Pizza Section */}
+            {!isMobile && (
+                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px]">
+                    <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
+                        <source src="/Assets/Videos/PizzaBreak.mov" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="absolute inset-0 flex flex-col items-left justify-center">
+                        <div className="text-white p-8 text-left w-auto animate-fade-in">
+                            <div className="text-8xl text-red font-extrabold font-sans">
+                                🍕 Enjoy Your Pizza Break! 🍕
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Information on the left */}
+            <div className="p-6 max-w-[720px] animate-fade-in">
+                <h1 className="text-xl md:text-4xl font-bold font-sans text-black mb-4 mt-12">
+                    It's Pizza Time at <strong>CONCEPTO-23</strong>!
+                    <br />Savor the Flavor of Innovation
+                </h1>
+                <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+                    Take a moment to recharge, connect with fellow innovators, and prepare for an exciting afternoon of ideation and fun!
+                </p>
             </div>
+
+            
         </div>
     );
 }

@@ -42,6 +42,7 @@ const AboutConcepto = () => {
                     <img src="/Assets/Miscellaneous/Poster_2.png" alt="Concepto23 Image" className="w-full h-auto" />
                 </div>
             </div>
+            
         </section>
     );
 };
