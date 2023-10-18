@@ -22,6 +22,11 @@ const About = () => {
                         alt="Event Sponsor Logo"
                         className="w-50 h-20 mx-auto mb-4"
                     />
+                    <img
+                        src="/Assets/Sponsors/InterviewCake.png"
+                        alt="Event Sponsor Logo"
+                        className="w-50 h-20 mx-auto mb-4"
+                    />
                     <p className="text-sm font-medium text-gray-700">Event Sponsors</p>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-semibold text-black text-center mb-8">
