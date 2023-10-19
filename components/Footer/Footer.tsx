@@ -51,16 +51,16 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="self-stretch px-6 md:px-32 justify-center items-center gap-8 inline-flex flex-col md:flex-row">
-                    <a href="/privacy-policy"> {/* Link to the Privacy Policy */}
+                    <a href="/PrivacyPolicy"> {/* Link to the Privacy Policy */}
                         <div className="text-center text-black text-base font-semibold font-['Plus Jakarta Sans']">Privacy Policy</div>
                     </a>
-                    <a href="/terms-and-conditions"> {/* Link to the Terms & Conditions */}
+                    <a href="/TermsAndConditions"> {/* Link to the Terms & Conditions */}
                         <div className="text-center text-black text-base font-semibold font-['Plus Jakarta Sans']">Terms & Conditions</div>
                     </a>
                 </div>
                 <div className="self-stretch px-6 md:px-32 justify-center items-center gap-8 inline-flex flex-col md:flex-row mb-8">
                     <div className="text-center text-black text-base font-semibold font-['Plus Jakarta Sans']">
-                        © IEEE SRMIST Student Branch
+                        © IEEE SRMIST
                     </div>
                 </div>
             </div>
