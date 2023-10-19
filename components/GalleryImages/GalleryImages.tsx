@@ -4,51 +4,51 @@ import './GalleryImages.css';
 const GalleryImages = () => {
     const images = [
         {
-            url: '/Assets/Gallery/IMG_0712.png',
+            url: '/Assets/Gallery/IMG_0800.jpeg',
             alt: 'Image 1',
         },
         {
-            url: '/Assets/Gallery/IMG_3569.png',
+            url: '/Assets/Gallery/IMG_3569.jpeg',
             alt: 'Image 2',
         },
         {
-            url: '/Assets/Gallery/IMG_3576.png',
+            url: '/Assets/Gallery/IMG_3576.jpeg',
             alt: 'Image 3',
         },
         {
-            url: '/Assets/Gallery/IMG_0602.png',
+            url: '/Assets/Gallery/IMG_3571.jpeg',
             alt: 'Image 4',
         },
         {
-            url: '/Assets/Gallery/IMG_0645.png',
+            url: '/Assets/Gallery/IMG_0622.jpeg',
             alt: 'Image 5',
         },
         {
-            url: '/Assets/Gallery/IMG_0622.png',
+            url: '/Assets/Gallery/IMG_2906.jpeg',
             alt: 'Image 6',
         },
         {
-            url: '/Assets/Gallery/IMG_0656.png',
+            url: '/Assets/Gallery/IMG_0645.jpeg',
             alt: 'Image 7',
         },
         {
-            url: '/Assets/Gallery/IMG_0655.png',
+            url: '/Assets/Gallery/IMG_3580.jpeg',
             alt: 'Image 8',
         },
         {
-            url: '/Assets/Gallery/IMG_3580.png',
+            url: '/Assets/Gallery/IMG_0656.jpeg',
             alt: 'Image 9',
         },
         {
-            url: '/Assets/Gallery/IMG_0642.png',
+            url: '/Assets/Gallery/IMG_0602.jpeg',
             alt: 'Image 10',
         },
         {
-            url: '/Assets/Gallery/IMG_3571.png',
+            url: '/Assets/Gallery/IMG_0620.jpeg',
             alt: 'Image 11',
         },
         {
-            url: '/Assets/Gallery/IMG_0620.png',
+            url: '/Assets/Gallery/IMG_0642.jpeg',
             alt: 'Image 12',
         },
     ];

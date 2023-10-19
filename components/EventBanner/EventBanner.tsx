@@ -32,14 +32,10 @@ const EventBanner = () => {
 
     // List of startup pitches and results
     const startupPitches = [
-        "Commute spy",
-        "Nexus",
-        "Earthly Eats",
-        "Piezoelectric Flooring",
-        "G.O.J.O",
-        "Innovate Hub",
-        "GrowCap",
-        "EcoGenix Energy"
+        "🥇 G.O.J.O",
+        "🥈 Puddle Sense",
+        "🥉 Grow Cap",
+
     ];
 
     return (
@@ -189,7 +185,7 @@ const EventBanner = () => {
 
             {/* Startup Pitches */}
             {!isMobile && (
-                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
+                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-24">
                     <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
                         <source src="/Assets/Videos/Startup_Pitches.mov" type="video/mp4" />
                         Your browser does not support the video tag.
@@ -197,7 +193,7 @@ const EventBanner = () => {
                     <div className="absolute inset-0 flex flex-col items-left justify-center">
                         <div className="text-white p-8 text-left w-auto animate-fade-in">
                             <div className="text-8xl text-red font-extrabold font-sans">
-                                Startup Pitches
+                                WINNERS
                             </div>
                         </div>
                     </div>
@@ -206,10 +202,10 @@ const EventBanner = () => {
 
             {/* Section to Publish Startup Pitches */}
             <div className="max-w-[720px] text-center mx-auto my-8 animate-fade-in">
-                <h2 className="text-2xl md:text-3xl font-bold font-sans text-black mb-4">
-                    Startup Pitches
+                <h2 className="text-2xl md:text-3xl font-bold font-sans text-black mb-8">
+                    Winners
                 </h2>
-                <ul className="text-xl text-gray-600">
+                <ul className="text-4xl font-bold text-gray-600">
                     {startupPitches.map((startup, index) => (
                         <li key={index}>
                             {startup}
