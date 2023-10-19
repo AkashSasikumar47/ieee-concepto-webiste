@@ -1,0 +1,21 @@
+/* GalleryImages.css */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery-item {
+    padding: 6px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

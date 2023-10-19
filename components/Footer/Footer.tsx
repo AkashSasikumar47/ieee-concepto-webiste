@@ -42,6 +42,9 @@ const Footer = () => {
                     <a href="/Contact"> {/* Link to the Contact page */}
                         <div className="text-center text-black text-base font-semibold font-['Plus Jakarta Sans']">Contact</div>
                     </a>
+                    <a href="/Gallery"> {/* Link to the Contact page */}
+                        <div className="text-center text-black text-base font-semibold font-['Plus Jakarta Sans']">Gallery</div>
+                    </a>
                     <a href="https://forms.gle/yeQDynfTv4P8eFWx9" target="_blank" rel="noopener noreferrer">
                         {/* Register button with a link to the registration form */}
                         <div className="text-center text-black text-base font-semibold font-['Plus Jakarta Sans']">Register</div>

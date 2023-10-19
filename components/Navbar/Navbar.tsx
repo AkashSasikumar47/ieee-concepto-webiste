@@ -46,6 +46,7 @@ const Navbar = () => {
                         <a href="/About" className="text-black font-semibold">About</a>
                         <a href="/Mentors" className="text-black font-semibold">Mentors</a>
                         <a href="/Contact" className="text-black font-semibold">Contact</a>
+                        <a href="/Gallery" className="text-black font-semibold">Gallery</a>
 
                         {/* Conditionally render the button for large screens */}
                         {!isMobileMenuOpen && (
@@ -66,7 +67,8 @@ const Navbar = () => {
                         <div className="text-black">
                             <a href="/About" className="block text-black py-2">About</a>
                             <a href="/Mentors" className="block text-black py-2">Mentors</a>
-                            <a href="/Contact" className="block text-black py-2 mb-8">Contact</a>
+                            <a href="/Contact" className="block text-black py-2">Contact</a>
+                            <a href="/Gallery" className="block text-black py-2 mb-8">Gallery</a>
                             {/* Render the button inside the mobile menu */}
                             <a
                                 href="https://forms.gle/yeQDynfTv4P8eFWx9"
