@@ -38,7 +38,6 @@ const EventBanner = () => {
         "Piezoelectric Flooring",
         "G.O.J.O",
         "Innovate Hub",
-        "PuddleSense",
         "GrowCap",
         "EcoGenix Energy"
     ];
@@ -143,7 +142,7 @@ const EventBanner = () => {
             {!isMobile && (
                 <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
                     <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
-                        <source src="/Assets/Videos/PizzaBreak.mov" type="video/mov" />
+                        <source src="/Assets/Videos/PizzaBreak.mov" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <div className="absolute inset-0 flex flex-col items-left justify-center">
@@ -192,7 +191,7 @@ const EventBanner = () => {
             {!isMobile && (
                 <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
                     <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
-                        <source src="/Assets/Videos/Startup_Pitches.mov" type="video/mov" />
+                        <source src="/Assets/Videos/Startup_Pitches.mov" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <div className="absolute inset-0 flex flex-col items-left justify-center">
