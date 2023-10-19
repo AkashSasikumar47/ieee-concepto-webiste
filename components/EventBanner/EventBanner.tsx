@@ -5,7 +5,7 @@ const EventBanner = () => {
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
     function calculateTimeRemaining() {
-        const eventDate = new Date('2023-10-18T17:00:00'); // October 18, 2023, 5:00 PM
+        const eventDate = new Date('2023-10-19T17:00:00'); // October 19, 2023, 5:00 PM
         const currentDate = new Date();
         const timeDifference = eventDate.getTime() - currentDate.getTime();
 
@@ -26,7 +26,22 @@ const EventBanner = () => {
         return () => {
             clearInterval(interval);
         };
+
+
     }, []);
+
+    // List of startup pitches and results
+    const startupPitches = [
+        "Commute spy",
+        "Nexus",
+        "Earthly Eats",
+        "Piezoelectric Flooring",
+        "G.O.J.O",
+        "Innovate Hub",
+        "PuddleSense",
+        "GrowCap",
+        "EcoGenix Energy"
+    ];
 
     return (
         <div className="relative bg-white mx-auto max-w-[1440px] px-4 md:px-6 lg:px-8 mb-16">
@@ -99,7 +114,7 @@ const EventBanner = () => {
                     <div className="relative w-full aspect-w-9 aspect-h-16 overflow-hidden rounded-xl">
                         <div className="video-container">
                             <video className="object-cover object-center w-full h-full rounded-xl" autoPlay loop muted>
-                                <source src="/Assets/Videos/Banner_Video.mov" type="video/mp4" />
+                                <source src="/Assets/Videos/Banner_Video.mov" type="video/mov" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -128,7 +143,7 @@ const EventBanner = () => {
             {!isMobile && (
                 <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
                     <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
-                        <source src="/Assets/Videos/PizzaBreak.mov" type="video/mp4" />
+                        <source src="/Assets/Videos/PizzaBreak.mov" type="video/mov" />
                         Your browser does not support the video tag.
                     </video>
                     <div className="absolute inset-0 flex flex-col items-left justify-center">
@@ -171,6 +186,37 @@ const EventBanner = () => {
                 <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
                     As the event comes to a close, we want to express our gratitude for your participation and enthusiasm. We hope you enjoyed the innovative discussions and networking sessions.
                 </p>
+            </div>
+
+            {/* Startup Pitches */}
+            {!isMobile && (
+                <div className="hidden md:block relative rounded-xl overflow-hidden h-[400px] mt-12">
+                    <video className="object-cover object-center w-full h-full rounded-3xl" autoPlay loop muted>
+                        <source src="/Assets/Videos/Startup_Pitches.mov" type="video/mov" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="absolute inset-0 flex flex-col items-left justify-center">
+                        <div className="text-white p-8 text-left w-auto animate-fade-in">
+                            <div className="text-8xl text-red font-extrabold font-sans">
+                                Startup Pitches
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Section to Publish Startup Pitches */}
+            <div className="max-w-[720px] text-center mx-auto my-8 animate-fade-in">
+                <h2 className="text-2xl md:text-3xl font-bold font-sans text-black mb-4">
+                    Startup Pitches
+                </h2>
+                <ul className="text-xl text-gray-600">
+                    {startupPitches.map((startup, index) => (
+                        <li key={index}>
+                            {startup}
+                        </li>
+                    ))}
+                </ul>
             </div>
 
         </div>

@@ -5,7 +5,7 @@ const Hero = () => {
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
     function calculateTimeRemaining() {
-        const eventDate = new Date('2023-10-18T08:00:00'); // October 18, 2023, 8:00 AM
+        const eventDate = new Date('2023-10-19T17:00:00'); // October 19, 2023, 5:00 PM
         const currentDate = new Date();
         const timeDifference = eventDate.getTime() - currentDate.getTime();
 
@@ -74,7 +74,7 @@ const Hero = () => {
 
                     {/* Smaller Black Card with Countdown */}
                     <div className="bg-black rounded-2xl p-6 text-white absolute right-[4%] md:right-[120px] bottom-[36px] md:bottom-[10%] animate-fade-in">
-                        <h2 className="text-lg font-semibold mb-2">Event Countdown</h2>
+                        <h2 className="text-lg font-semibold mb-2">Event Ends</h2>
                         <div id="countdown" className="text-sm text-[#EDDAC5] font-semibold">
                             <span id="days">{timeRemaining.days.toString().padStart(2, '0')}</span>&nbsp;Days&nbsp;
                             <span id="hours">{timeRemaining.hours.toString().padStart(2, '0')}</span>&nbsp;Hours&nbsp;
