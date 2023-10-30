@@ -33,7 +33,6 @@ const Home = () => {
         <meta property="og:url" content="https://www.ieeesrmist.com" />
       </Head>
 
-
       <Navbar />
       <Hero />
       <Sponsors />
