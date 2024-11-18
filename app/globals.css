@@ -2,44 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --blue-700: #0038FF;
-  --neutral-950: #020305;
-  --gray-900: #0D0F12;
-  --gray-500: #63757C;
-  --slate-400: #A9C2CB;
-  --neutral-300: #D3D3D3;
-  --white: #FFFFFF;
-  --font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-color: #ffffff;
-    --text-color: #000000;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: var(--background-color);
-  font-family: var(--font-family);
-}
-
-a {
-  color: var(--blue-700);
-}
-
-button {
-  background-color: var(--blue-700);
-  color: var(--white);
-}
-
-input {
-  background-color: var(--neutral-950);
-  color: var(--text-color);
+@font-face {
+    font-family: 'Triac';
+    src: url('/fonts/triac%2071.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

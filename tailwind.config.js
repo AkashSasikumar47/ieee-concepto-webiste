@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
+        triac: ['Triac 71', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -26,6 +27,10 @@ module.exports = {
         '7xl': '5rem',
         '8xl': '6rem',
         '9xl': '8rem',
+        '10xl': '10rem',
+        '14xl': '14rem',
+        '15xl': '18rem',
+        '16xl': '22rem',
       },
       fontWeight: {
         normal: '400',
