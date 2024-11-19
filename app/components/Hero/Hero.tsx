@@ -13,7 +13,7 @@ const Hero = () => {
             </div>
             <div className="w-full md:w-1/2 flex items-center justify-center md:items-end">
                 <h1
-                    className="font-bold text-black text-10xl md:text-12xl lg:text-14xl xl:text-15xl 2xl:text-16xl"
+                    className="mb-2 font-bold text-black text-10xl md:text-12xl lg:text-14xl xl:text-15xl 2xl:text-16xl"
                     style={{
                         fontFamily: 'Triac',
                     }}
